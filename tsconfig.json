@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    // Compile TypeScript to ES2022 JavaScript (modern syntax with features like top-level await, class fields)
+    "target": "ES2022",
+    
+    // Use Node.js v16+ module system (supports both CommonJS and ES modules)
+    "module": "Node16",
+    
+    // Use Node.js v16+ module resolution strategy (how TypeScript finds imported modules)
+    "moduleResolution": "Node16",
+    
+    // Output compiled JavaScript files to the ./build directory
+    "outDir": "./build",
+    
+    // Look for source TypeScript files in the ./src directory
+    "rootDir": "./src",
+    
+    // Enable all strict type checking options (catches more potential errors)
+    "strict": true,
+    
+    // Allow default imports from modules that don't have default exports (better compatibility)
+    "esModuleInterop": true,
+    
+    // Skip type checking of declaration files (.d.ts) to speed up compilation
+    "skipLibCheck": true,
+    
+    // Ensure file names are treated case-sensitively (prevents issues on case-insensitive filesystems)
+    "forceConsistentCasingInFileNames": true
+  },
+  
+  // Include all files with any extension in the src directory and its subdirectories
+  "include": ["src/**/*"],
+  
+  // Exclude the node_modules directory from compilation (contains third-party packages)
+  "exclude": ["node_modules"]
+}
