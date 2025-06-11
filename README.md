@@ -68,7 +68,6 @@ Example parameters:
 1. Clone the repository
 2. Install dependencies: `npm install`
 3. Build the project: `npm run build`
-4. Run the server: `npm start`
 
 ## API Integration
 
@@ -84,7 +83,3 @@ The server includes robust error handling for:
 - Invalid coordinates
 - Missing or malformed data
 - Network issues
-
-## License
-
-ISC 
